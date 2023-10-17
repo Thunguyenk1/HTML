@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Editor</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Startus.html">
+    <link rel="stylesheet" href="./help.html">
+</head>
+<body>
+    <span class="text-help imgHelp"><a href="help.html">Help</a></span>
+	<div id="main">
+		<h2>Compose e-mail message.</h2>
+		<form method="post" action="Startus.html">
+			<div class="form-group">
+				<label>To:</label>
+				<input required="true" type="email" name="to" class="Email-Editor">
+			</div>
+			<div class="form-group">
+				<label>From:</label>
+				<input required="true" type="email" name="from" class="Email-Editor">
+			</div>
+			<div class="form-group">
+				<label>Cc:</label>
+				<input required="true" type="email" name="cc" class="Email-Editor">
+			</div>
+			<div class="form-group">
+				<label>Subject:</label>
+				<input required="true" type="text" name="subject" class="Email-Editor">
+			</div>
+			<div class="form-group">
+				<label>Message:</label>
+				<textarea required="true" rows="5" class="Email-Editor"></textarea>
+			</div>
+			<div class="form-group">
+				<label></label>
+				<button type="submit"><a href="./Startus.html">Send</a></button>
+				<button type="reset">Cancel</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

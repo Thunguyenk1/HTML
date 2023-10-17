@@ -1,0 +1,30 @@
+h3 {
+    text-align: center;
+}
+
+.content {
+    background-color: antiquewhite;
+}
+
+label::after {
+    content: "*";
+    color: red;
+    font-size: 15px;
+}
+
+input {
+    width: 100%;
+    cursor: pointer;
+}
+
+textarea {
+    cursor: pointer;
+    width: 100%;
+}
+
+#submit {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+}

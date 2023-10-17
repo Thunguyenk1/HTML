@@ -1,0 +1,36 @@
+a {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: red;
+    color: black;
+}
+
+a::before {
+    content: "+ ";
+}
+
+a::after {
+    content: " > ";
+}
+
+.menu {
+    list-style-type: none;
+    background-color: orange;
+    padding-left: 0px;
+    display: flex;
+}
+
+li {
+    cursor: pointer;
+    padding: 20px;
+}
+
+li:hover {
+    background-color: red;
+    color: yellow;
+}

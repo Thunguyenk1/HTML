@@ -1,0 +1,85 @@
+body {
+	background-color: rgb(255,255,240);
+}
+
+textarea {
+	scrollbar-3dlight-color: #C0C0C0;
+	scrollbar-shadow-color: silver;
+	scrollbar-arrow-color: black;
+	scrollbar-face-color: gray;
+}
+
+.text-help {
+	background-color: #DDFFEE;
+	padding: 5px;
+	font-weight: bold;
+	color: blue;
+	float: right;
+	margin-right: 28%;
+}
+
+.imgHelp {
+	cursor: help;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.Email-Editor {
+	background-color: #FFFFDD;
+}
+
+#main {
+	width: 400px;
+	background-color: #DDFFEE;
+	margin: 0px auto;
+	padding: 10px;
+	display: block;
+}
+
+#help {
+	width: 500px;
+	height: 420px;
+	background-color: #cfc;
+	margin: 0px auto;
+	padding: 10px;
+	border: solid 2px #E4E7E7;
+	color: #303030;
+	display: block;
+}
+
+.form-group {
+	width: 100%;
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.form-group label {
+	width: 20%;
+	float: left;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.form-group input, .form-group textarea {
+	width: 75%;
+	float: left;
+	border: solid 2px #E4E7E7;
+}
+
+.form-group button {
+	margin-right: 5px;
+}
+
+.help ul {
+	list-style-position: inside;
+	list-style-image: url('./img/arrow.jpg');
+}
+
+.help label {
+	color: blue;
+	float: right;
+	cursor: pointer;
+}
