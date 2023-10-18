@@ -1,0 +1,38 @@
+
+
+#main {
+	width: 400px;
+	background-color: gainsboro;
+	margin: 0px auto;
+	padding: 10px;
+	display: block;
+    border: solid 2px black;
+}
+
+#borderSV {
+    border: solid 2px gray;
+    padding: 20px;
+}
+
+b {
+    color: green;
+}
+
+.SinhVien {
+    width: 100%;
+	display:flex;
+	margin-bottom: 5px;
+}
+
+button {
+    margin-right: 10px;
+}
+
+table {
+    border: solid 2px gray;
+    width: 100%;
+}
+
+th {
+    font-size: 12px;
+}

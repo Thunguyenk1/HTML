@@ -1,0 +1,20 @@
+.heading {
+    font: arial;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.general {
+    font-style: italic;
+    text-align: inherit;
+}
+
+.places {
+    font-size: medium;
+}
+
+ul li {
+    font-size: small;
+    font: verdana;
+    list-style-type:square;
+}

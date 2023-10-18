@@ -1,0 +1,112 @@
+/* debug start */
+.header {
+	/*width: 100%;*/
+	/*height: 300px;*/
+	/*border: solid 2px red;*/
+}
+
+.header .banner {
+	/*width: 100%;*/
+	/*height: 100px;*/
+	/*border: solid 2px blue;*/
+}
+
+.header .menu {
+	/*width: 100%;*/
+	/*height: 100px;*/
+	/*border: solid 2px black;*/
+}
+
+.main {
+	width: 100%;
+	/*height: 600px;*/
+	/*border: solid 2px red;*/
+}
+
+.section {
+	width: 100%;
+	/*height: 300px;*/
+	/*border: solid 2px blue;*/
+	display: flex;
+}
+
+.section .section-left {
+	width: 50%;
+	/*height: 300px;*/
+	/*border: solid 2px green;*/
+	/*background-mau: green;*/
+	padding: 5px;
+}
+
+.section .section-middle {
+	width: 25%;
+	/*height: 300px;*/
+	/*border: solid 2px blue;*/
+	/*background-mau: blue;*/
+	padding: 5px;
+}
+
+.section .section-right {
+	width: 25%;
+	/*height: 300px;*/
+	/*border: solid 2px black;*/
+	/*background-mau: black;*/
+	padding: 5px;
+}
+/* debug end */
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.header .banner img {
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+}
+
+.header .menu ul {
+	list-style-type: none;
+	display: flex;
+	background-color: #ff5722;
+	margin: 0px;
+	padding: 0px;
+	color: white;
+}
+
+.header .menu ul li {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.header .menu ul li:hover {
+	background-color: yellow;
+	color: black;
+}
+
+.section .section-left img, .section .section-middle img, .section .section-right img {
+	width: 100%;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.list-items {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.list-items li {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border-bottom: solid 2px #e1dbdb;
+	cursor: pointer;
+}
+
+.list-items li:hover {
+	background-color: lightgreen;
+}

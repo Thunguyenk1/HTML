@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thong tin sinh vien</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+        <b >Nhap thong tin sinh vien</b><br />
+        <form id="borderSV">
+            <label class="SinhVien">Full Name:<input required type="text" /> </label><br />
+
+            <label class="SinhVien">
+                Gender
+                <select>
+                    <option value="Nam">Nam</option>
+                    <option value="Nu">Nu</option>
+                    <option value="Khac">Khac</option>
+                </select> 
+            </label><br />
+
+            <label class="SinhVien">Age:<input required type="number" /> </label><br />
+
+            <label class="SinhVien">Email:<input required type="email" /> </label><br />
+
+            <label class="SinhVien">Phone Number:<input required type="tel" /> </label><br />
+
+            <a href=""><button  type="submit">Save</button></a>
+            <a id="reset" href=""><button type="reset">Reset</button></a>
+            <a href=""><button type="reset">Delete</button></a>
+            <a href=""><button type="submit">Find</button></a>
+        </form>
+        <br>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Full Name</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+  </body>
+</html>
