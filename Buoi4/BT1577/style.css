@@ -3,6 +3,7 @@ body {
 }
 
 h2 {
+    text-decoration: underline;
     text-align: center;
 }
 
@@ -23,7 +24,6 @@ button:hover {
 }
 
 table {
-    margin-top: 10px;
     border: solid thin #D0D0D0;
     empty-cells: show;
 }
@@ -38,22 +38,28 @@ table tr td {
 }
 
 #navigation {
-    position: absolute;
-    right: 25%;
+    position: relative;
+    left: 25%;
     text-align: center;
 }
 
-#tablesectionOne #tablesectionTwo #tablesectionThree {
+#tablesectionOne #tablesectionTwo #tablesectionThree #tablesectionFour {
     table-layout: fixed;
     text-align: center;
     background-color: #FFFFDD;
-    position: absolute;
+    position: relative;
     top: 7em;
 }
 
 .CAPTION {
+    width: 270px;
     background-color: rgb(255,185,115);
-    font-style: arial;
+    font-family: arial;
     font-size: 1em;
     padding: 5px;
+    margin-top: 20px;
+}
+
+.table {
+    display:unset;
 }
