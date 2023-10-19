@@ -1,21 +1,37 @@
-.Logo {
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+.header{
+	width: 100%;
+	display: block;
+}
+
+.header .Logo {
     width: 150px;
-    object-fit: cover;
+    display: flex;
+}
+
+.header .menu{
+	width: 100%;
+	display: flex;
+	background-color: #9f1616;
+    color: white;
 }
 
 .header .menu ul {
     display: flex;
     list-style-type: none;
-    background-color: #9f1616;
-    color: #e4cece;
     padding: 0px;
     margin: 0px;
 }
 
 .header .menu ul li {
     padding: 10px;
-    cursor: pointer;
     text-indent: 20px;
+    border-right: solid 1px gray;
+    cursor: pointer;
 }
 
 .header .menu ul li:hover {
@@ -31,48 +47,119 @@
 
 h3 {
     color: gray;
+    padding: 10px;
 }
 
-.header .main {
-    width: 100%;
+.main {
+    display: flex;
 
 }
 
 .main .main-left {
     width: 70%;
     float: left;
-    /* border: solid 2px gray; */
-}
-
-.main .main-left .PowerQuery {
-    width: 200px;
+    /* border: solid gray; */
 }
 
 .main .main-left .Power {
-    padding: 20px;
+    width: 100%;
+	display: flex;
+}
+
+.main .main-left .PowerQuery {
+    padding: 5px;
+	width: 40%;
+	float: left;
+}
+
+.main .main-left .section {
+    padding: 5px;
+	width: 60%;
+	float: left;
+}
+
+.section .title {
+    padding-bottom: 40px;
+	font-family: cursive;
 }
 
 .main .main-left .Power .continue {
     color: red;
 }
+.main .main-left .Power .continue:hover {
+    cursor: pointer;
+}
+
 
 .main .main-right {
     width: 30%;
-    float: right;
+    float: left;
     /* border: solid 2px gray; */
 }
 
 .main .main-right .search {
     width: 100%;
     margin-top: 20px;
-    /* border: solid 2px gray; */
+    display: flex;
+    /* border: solid 0px gray; */
+}
+
+.Baiviet {
+    width: 100px;
+}
+
+.imgBV {
+    width: 25%;
+	float: left;
+	padding: 5px;
+}
+
+.text {
+    width: 75%;
+	padding-left: 5px;
+	float: left;
 }
 
 .main .main-right .section2 {
     width: 100%;
 }
 
-.main .main-right .section2 .imgBV .Baiviet {
-    width: 100px;
+.post {
+    width: 100%;
+	display: flex;
 }
+
+.Baiviet {
+    width: 40%;
+	float: left;
+	padding: 5px;
+}
+
+.text {
+    width: 60%;
+	padding-left: 5px;
+	float: left;
+}
+
+.icon img {
+    width: 30px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.icon:hover {
+    cursor: pointer;
+} 
+
+.follow img {
+    width: 200px;
+}
+
+.follow:hover {
+    cursor: pointer;
+}
+
+
+
+
 
