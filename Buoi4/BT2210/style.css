@@ -1,0 +1,78 @@
+.Logo {
+    width: 150px;
+    object-fit: cover;
+}
+
+.header .menu ul {
+    display: flex;
+    list-style-type: none;
+    background-color: #9f1616;
+    color: #e4cece;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header .menu ul li {
+    padding: 10px;
+    cursor: pointer;
+    text-indent: 20px;
+}
+
+.header .menu ul li:hover {
+    background-color: gray;
+    color: black;
+}
+
+.header .menu ul li::after {
+    content: " ▼";
+    font-size: 9px;
+}
+
+
+h3 {
+    color: gray;
+}
+
+.header .main {
+    width: 100%;
+
+}
+
+.main .main-left {
+    width: 70%;
+    float: left;
+    /* border: solid 2px gray; */
+}
+
+.main .main-left .PowerQuery {
+    width: 200px;
+}
+
+.main .main-left .Power {
+    padding: 20px;
+}
+
+.main .main-left .Power .continue {
+    color: red;
+}
+
+.main .main-right {
+    width: 30%;
+    float: right;
+    /* border: solid 2px gray; */
+}
+
+.main .main-right .search {
+    width: 100%;
+    margin-top: 20px;
+    /* border: solid 2px gray; */
+}
+
+.main .main-right .section2 {
+    width: 100%;
+}
+
+.main .main-right .section2 .imgBV .Baiviet {
+    width: 100px;
+}
+

@@ -1,0 +1,59 @@
+body {
+    background-color: #FFFFCC;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    background-color: aquamarine;
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+}
+
+button a {
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: orange;
+    color: white;
+}
+
+table {
+    margin-top: 10px;
+    border: solid thin #D0D0D0;
+    empty-cells: show;
+}
+table tr th {
+    border: solid thin #D0D0D0;
+    empty-cells: show;
+}
+
+table tr td {
+    border: solid 2px #D0D0D0;
+    empty-cells: show;
+}
+
+#navigation {
+    position: absolute;
+    right: 25%;
+    text-align: center;
+}
+
+#tablesectionOne #tablesectionTwo #tablesectionThree {
+    table-layout: fixed;
+    text-align: center;
+    background-color: #FFFFDD;
+    position: absolute;
+    top: 7em;
+}
+
+.CAPTION {
+    background-color: rgb(255,185,115);
+    font-style: arial;
+    font-size: 1em;
+    padding: 5px;
+}

@@ -85,6 +85,10 @@ body {
 	color: black;
 }
 
+banner {
+	display: flex;
+}
+
 .section .section-left img, .section .section-middle img, .section .section-right img {
 	width: 100%;
 }
