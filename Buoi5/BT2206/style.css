@@ -1,0 +1,130 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header .banner {
+    background-color: aquamarine;
+}
+
+.header .banner img {
+    width: 300px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header .nav {
+    background-color: rgb(116, 169, 33);
+    color:aliceblue;
+}
+
+.header .nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header .nav ul li {
+    padding: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-right: solid 1px gainsboro;
+    
+}
+
+.header .nav ul li:hover {
+    background-color: rgb(20, 175, 175);
+    color: black;
+}
+
+.main {
+    position: absolute;
+    width: 100%;
+}
+
+.main .main-left {
+    width: 60%;
+    float: left;
+}
+
+.main .main-right {
+    width: 40%;
+    float: right;
+
+
+}
+
+h3 {
+    color: rgb(36, 167, 167);
+}
+
+h4 {
+    background-color: rgb(116, 169, 33);
+    color:aliceblue;
+    padding-left: 10px;
+}
+
+.textBlog {
+    color: rgb(0, 47, 255);
+}
+
+.textBlog a {
+    text-decoration: none;
+}
+
+.item {
+    background-color: rgba(250, 235, 215, 0.142);
+}
+
+.item ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.item ul li{
+    cursor: pointer;
+    padding: 10px;
+    color: rgb(68, 99, 18);
+}
+
+.item ul li:hover{
+    background-color: rgba(186, 185, 185, 0.692);
+}
+
+.main-left label {
+    font-weight: bolder;
+}
+
+.autorun {
+    width: 100%;
+}
+
+p {
+    color:  gray;
+}
+
+.row {
+    color:rgb(12, 34, 135);
+}
+
+.wifi {
+    width: 20px;
+}
+
+.nav .search {
+    background-color: orange;
+    cursor: none;
+}
+
+button {
+    background-color: rgb(116, 169, 33);
+    color:aliceblue;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(9, 86, 86);
+    color: red;
+}
