@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT2709</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var N = prompt('Nhap N: ')
+        var t = [N];
+        
+        console.log(t)
+        for(i = 0; i < N; i++){
+            t[i] = prompt("Nhap t" + i + " = ", "" );
+        }
+        t.sort();
+        document.write("Danh sach da sap xep la:" + '<br>');
+
+        for(i = 0; i < N; i++){
+            document.write( t[i]);
+            document.write("<br>");
+        }
+        alert("Cac phan tu trong mang la: " + t.join())
+        // console.log(t.join())
+        let sum = 0;
+        for(i = 0; i < t.length; i++){
+            sum = sum + Number(t[i]);
+        }
+        alert("Tong cac phan tu trong mang la: " + sum)
+
+
+    </script>
+</body>
+</html>
