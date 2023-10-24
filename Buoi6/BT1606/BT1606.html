@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT1606</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var a = prompt('Nhap gia tri cua a: ')
+        var b = prompt('Nhap gia tri cua b: ')
+        var c = prompt('Nhap gia tri cua c: ')
+        var delta = (b*b-4*a*c)
+        document.write('delta: ' + delta + '<br>')
+        if (a==0){
+		    if (b == 0 ){
+		        if (c == 0) {
+		            document.write('Phuong trinh vo so nghiem')
+                }else document.write('Phuong trinh vo nghiem')
+	        }else{
+                x= -c/b
+                document.write(x)	
+            }
+        }else{
+			delta=b*b - 4*a*c
+			if(delta<0){
+                document.write('delta < 0' + '<br>')
+				document.write('Ket luan: Phương trình vô nghiệm!!!')
+			}
+			else if(delta==0){
+				x1=-b/(2*a)
+                document.write('delta = 0' + '<br>')
+				document.write('Phương trình có 1 nghiệm kép là: '+ '<br>' +'x  = ' + x1)
+			}
+			else{
+				x2=(-b + Math.sqrt(delta))/(2*a)
+				x3=(-b - Math.sqrt(delta))/(2*a)
+                document.write('delta > 0' + '<br>')
+				document.write('Phương trình có 2 nghiệm phân biệt là:'+ '<br>' +'x1 = ' + x2 + '<br><br>' +'x2 = ' + x3)
+			}
+		}
+    </script>
+</body>
+</html>
