@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <label>Calculation</label>
+        </div>
+        <div class="main">
+            <button type="button" class="btn btn-value" onclick="ValueData()">Nhap a va b</button>
+            <button type="button" class="btn btn-result" onclick="ResultData()">Ket qua</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var a, b
+        function ValueData() {
+            a = parseInt(prompt('Nhap a: '))
+            b = parseInt(prompt('Nhap b: '))
+        }
+
+        function ResultData() {
+            let sum = a + b
+            let hieu = a - b
+            let nhan = a * b
+            let chia = a / b
+            alert('a + b = ' + sum)
+            alert('a - b = ' + hieu)
+            alert('a * b = ' + nhan)
+            alert('a / b = ' + chia)
+        }
+
+    </script>
+</body>
+</html>

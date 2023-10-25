@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    border: solid 1px gray; 
+}
+
+.content .header {
+    border: solid 1px gray;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    font-size: large;
+}
+
+.content .main {
+    margin: 10px;
+}
+
+.content .main .btn {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.content .main .btn:hover {
+    background-color: lightgray;
+    color: black;
+}
