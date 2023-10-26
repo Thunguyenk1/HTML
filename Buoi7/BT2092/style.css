@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+.login {
+    width: 400px;
+    height: 200px;
+    margin: 0px auto;
+    border: solid 1px #FFFFCC;
+    border-radius: 5px;
+    background-color: #FFFFCC;
+}
+
+.login .login-heading {
+    font-family: Arial;
+    color: #0000CC;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.login-body {
+    font-family: Arial;
+    display: flex;
+    width: 100%;
+}
+
+.login-img{
+    width: 30%;
+    text-align: left;
+}
+
+.login-img img{
+    width: 50px;
+    margin-left: 20px;
+}
+
+.login-input{
+    width: 70%;
+    text-align: center;
+    color: #0000CC;
+
+}
+
+.login-input label {
+    margin-right: 20px;
+}
+
+.login-input input {
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button{
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    background-color: lightgray;
+    color: black;
+}
+
+
+/* library */
+
+.library {
+    width: 700px;
+    height: 400px;
+    background-color: #FFFFCC;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.library-heading {
+    color: #0000CC;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.item {
+    padding-bottom: 15px;
+    display: flex;
+    padding-left: 30px;
+}
+
+.item label {
+    width: 20%;
+    padding-top: 5px;
+}
+
+.item input {
+    width: 70%;
+    padding-top: 5px;
+}
+
+.item select {
+    width: 70%;
+    padding-top: 5px;
+}
+
+.item button {
+    background-color:#CCCCCC;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.item button:hover {
+    background-color:red;
+    color: white;
+}

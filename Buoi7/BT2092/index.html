@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tai Nguyen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="library.html" method="post">
+        <div class="login">
+            <div class="login-heading">
+                <label>Đăng Nhập Hệ Thống</label>
+            </div>
+            <div class="login-body">
+                <div class="login-img">
+                    <img src="https://www.freeiconspng.com/thumbs/lock-icon/lock-icon-11.png" alt="login.png">
+                </div>
+    
+                <div class="login-input">
+                    <div class="userame">
+                        <label>Tài khoản</label>
+                        <input type="text" id="userame_id" placeholder="Enter userame" required>
+                    </div>
+                    
+                    <div class="password">
+                        <label>Mật khẩu</label>
+                        <input type="password" id="password_id" placeholder="Enter password" required>
+                    </div>
+                    <div class="btn">
+                        <label>&nbsp;</label>
+                        <button type="submit" id="Login_id" onclick="successData()">Đăng nhập</button>
+                        <button type="reset" onclick="resetData()">Nhập lại</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="Login.js"></script>
+</body>
+</html>

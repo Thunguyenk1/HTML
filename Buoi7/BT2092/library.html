@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Login.js"></script>
+</head>
+<body>
+    <form action="library.html" method="post">
+        <div class="library">
+            <div class="library-heading">
+                <label>Đăng Nhập Hệ Thống</label>
+            </div>
+            <div class="library-body">    
+                <div class="library-input">
+                    <div class="item">
+                        <label>Mã sinh viên</label>
+                        <input type="text" id="msv_id" placeholder="Enter MSV" required>
+                    </div>
+                    
+                    <div class="item">
+                        <label>Họ và tên</label>
+                        <input type="text" id="name_id" placeholder="Enter name" required>
+                    </div>
+                    <div class="item">
+                        <label>Loại sách</label>
+                        <select name="Loaisach" id="Loaisach_id">
+                            <option value="">---Chọn loại sách---</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label>Tên sách</label>
+                        <input type="text" id="bookname_id" placeholder="Enter book name" required>
+                    </div>
+                    <div class="item">
+                        <label>Ngày mượn</label>
+                        <input type="date" id="date_id" placeholder="Enter borrowing date" required>
+                    </div>
+                    <div class="item">
+                        <label>Ngày trả</label>
+                        <input type="date" id="pay_id" placeholder="Enter return date" required>
+                    </div>
+                    <div class="item">
+                        <label>&nbsp;</label>
+                        <button type="submit" id="Login_id">Đăng ký</button>
+                        <button type="reset" onclick="resetData()">Nhập lại</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
