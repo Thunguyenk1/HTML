@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng website</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <label>Input product's detail information</label>
+        </div>
+        <div class="main">
+            <div class="group-control">
+                <label>Product Name</label>
+                <input type="text" id="Product_id" class="form-control" placeholder="Nhap">
+            </div>
+            <div class="group-control">
+                <label>Category Name</label>
+                <select id="Category_id" class="form-control">
+                    <option value="">--- Chon ---</option>
+                </select>
+            </div>
+            <div class="group-control">
+                <label>Price</label>
+                <input type="number" id="Price_id" class="form-control" placeholder="Enter Price" onkeyup="updateTotalPrice()">
+            </div>
+            <div class="group-control">
+                <label>Quantity</label>
+                <input type="number" id="Quantity_id" class="form-control" placeholder="Enter Quantity" onkeyup="updateTotalPrice()">
+            </div>
+            <div class="group-control">
+                <label>Total Price</label>
+                <input type="number" id="TotalPrice_id" class="form-control" placeholder="Enter Total Price" disabled="true">
+            </div>
+            <div class="group-control">
+                <label>Manufacturer Name</label>
+                <select id="Manufacturer_id" class="form-control" onchange="changeManufacturerName()">
+                    <option value="">--- Chon ---</option>
+                </select>
+            </div>
+            <div class="group-control">
+                <label>&nbsp;</label>
+                <button type="button" class="btn btn-success" onclick="addData()">Add Product</button>
+                <button type="reset" class="btn btn-warning" onclick="resetData()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <label>Management Products</label>
+        </div>
+        <div class="main">
+            <table border="1" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Product Name</th>
+                        <th>Category Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                        <th>Manufacturer Name</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="data-table">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="BT2019.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    border: solid 2px #337AB7;
+    margin-top: 20px;
+}
+
+.content .header {
+    background-color: #337AB7;
+    color: white;
+    padding: 10px;
+}
+
+.main .group-control {
+    padding: 10px;
+}
+
+.main .group-control label {
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.main .group-control .form-control {
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.main .btn {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main .btn-success {
+    background-color: #5CB85C;
+    color: white;
+}
+
+.main .btn-success:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.main .btn-warning {
+    background-color: #F1AD4D;
+    color: white;
+}
+
+.main .btn-warning:hover {
+    background-color: lightcoral;
+    color: black;
+}
+
+.main .btn-edit {
+    background-color: #F1AD4D;
+    color: white;
+}
+
+.main .btn-edit:hover {
+    background-color: lightsalmon;
+    color: black;
+}
+
+.main .btn-delete {
+    background-color: #D9534F;
+    color: white;
+}
+
+.main .btn-delete:hover {
+    background-color: lightcoral;
+    color: black;
+}
+
+table {
+    width: 100%;
+}
+
+table tr th, td{
+    padding: 5px;
+}
