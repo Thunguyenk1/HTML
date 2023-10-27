@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhap thong tin bai viet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pannel">
+        <div class="pannel-heading">
+            <div class="header-logo">
+                <img src="https://png.pngtree.com/png-clipart/20190611/original/pngtree-wolf-logo-png-image_2306634.jpg" alt="">                
+                <label>Web tin tuc</label>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Trang Chu</li>
+                    <li>Tin Hoc</li>
+                    <li>Bieu Mau</li>
+                    <li>Khoa Hoc</li>
+                    <li>Tuyen Dung</li>
+                    <li>Lien He</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pannel-body">
+            <div class="left">
+                <div class="item">
+                    <label>Nhap thong tin bai viet</label>
+                </div>
+                <div class="group-form">
+                    <label>Tieu de: </label><br>
+                    <input id="tieude_id" type="text" placeholder="Nhap tieu de" minlength="10" maxlength="200" required>
+                </div>
+                <div class="group-form">
+                    <label>Hinh anh: </label><br>
+                    <input id="img_id" type="text" placeholder="Nhap img" required>
+                </div>
+                <div class="group-form">
+                    <label>Noi dung: </label><br>
+                    <textarea id="noidung_id" cols="30" rows="10" placeholder="Nhap noi dung" minlength="20" maxlength="500" required></textarea>
+                </div>
+                <div class="group-form">
+                    <label>&nbsp;</label><br>
+                    <button class="btn btn-success" type="submit" onclick="submitData()">LUU</button>
+                    <button class="btn btn-detele" type="reset" onclick="resetData()">XOA</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="content">
+                    <label><a href="form.html">Bai viet moi nhat</a></label>
+                </div>
+                <div class="Bai">
+                    <label>Bai 1</label><br>
+                    <label>Bai 2</label><br>
+                    <label>Bai 3</label><br>
+                    <label>Bai 4</label><br>
+                    <label>Bai 5</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dialog" id="dialog_id">
+        <div class="dialog_content">
+            <div class="dialog_body">
+                Dang nhap thanh cong
+            </div>
+            <div class="dialog_footer">
+                <button onclick="closeDialog()">OK</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
