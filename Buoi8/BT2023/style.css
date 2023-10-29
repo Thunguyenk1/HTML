@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.pannel {
+    width: 600px;
+    background-color: #DCF2E5;
+    border: solid 1px gray;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.pannel-heading .header h2 {
+    background-color: #CADCEB;
+    color: #15529F;
+    font-weight: bold;
+    width: 300px;
+    border: solid 1px gray;
+    margin-bottom: 20px;
+}
+
+.pannel-body .group-item  table {
+    width: 100%;
+    border-color: #0C94D8;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ECF1F3;
+}
+
+.pannel-body .group-item  table input {
+    width: 15%;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 3px;
+    border: solid 1px gray;
+}
+
+
+select {
+    width: 300px;
+    margin: 5px;
+    padding: 3px;
+}
+
+textarea {
+    margin: 5px;
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    width: 30%;
+    
+}
+
+.pannel-body  .group-item label {
+    color: #15529F;
+    font-weight: bold;
+}
+
+.pannel-footer {
+    border: solid 1px gray;
+    background-color: #ECF1F3;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.pannel-footer {
+    text-align: center;
+}
+
+.pannel-footer .btn {
+    border: solid 3px rgba(71, 177, 213, 0.316);
+    background-color: rgba(128, 128, 128, 0.195);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pannel-footer .btn:hover {
+    background-color: lightseagreen;
+    color: white;
+}
