@@ -7,90 +7,93 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="pannel">
-        <div class="pannel-heading">
-            <div class="header">
-                <h2>Purchase Order Form</h2>
+    <form action="" method="post" onsubmit="return saveData()">
+        <div class="pannel">
+            <div class="pannel-heading">
+                <div class="header">
+                    <h2>Purchase Order Form</h2>
+                </div>
+            </div>
+            <div class="pannel-body">
+                <div class="group-item">
+                    <label>Product Information</label>
+                    <table border="1">
+                        <tr>
+                            <th>Product: </th>
+                            <td>
+                                <select class="item" id="product_id" onchange="selectUnitPrice()" required>
+                                    <option value="">--Select--</option>
+                                    <option value="650">Comfort Sleeper</option>
+                                    <option value="975">Morgan Kids Bed</option>
+                                    <option value="480">Entertainment Cabinet</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Unit Price($): </th>
+                            <td>
+                                <input class="item" type="number" id="UnitPrice_id" disabled="true" value="0" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Quantity: </th>
+                            <td>
+                                <input class="item" type="number" id="quantity_id" disabled="true" value="0" onkeyup="updateQuantity()" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Total Price($): </th>
+                            <td>
+                                <input class="item" type="number" id="totalPrive_id" disabled="true" value="0" required>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="group-item">
+                    <label>Shipping Information</label>
+                    <table border="1">
+                        <tr>
+                            <th>Full Name: </th>
+                            <td>
+                                <input style="width: 300px;" type="text" class="item" id="fullname_id" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Shipping Address: </th>
+                            <td>
+                                <textarea type="text" id="shippingAddress_id" class="item" required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Credit Card: </th>
+                            <td>
+                                <select class="item" required="true" id="creditCard_id" onchange="selectCreditCard()">
+                                    <option value="">--Select--</option>
+                                    <option value="650">VISA</option>
+                                    <option value="975">Master Card</option>
+                                    <option value="480">American Express</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Credit Card Number: </th>
+                            <td>
+                                <input type="text"  id="ccn1_id" pattern="[0-9]{4}" maxlength="4" minlength="4" disabled="true" class="item" required>
+                                <input type="text" id="ccn2_id" pattern="[0-9]{4}" maxlength="4" minlength="4" disabled="true" class="item" required>
+                                <input type="text" id="ccn3_id" pattern="[0-9]{4}" maxlength="4" minlength="4" disabled="true" class="item" required>
+                                <input type="text" id="ccn4_id" pattern="[0-9]{4}" maxlength="4" minlength="4" disabled="true" class="item" required>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="pannel-footer">
+                <button class="btn btn-submit" type="submit">Submit</button>
+                <button class="btn btn-reset" type="reset" onclick="resetData()">Reset</button>
             </div>
         </div>
-        <div class="pannel-body">
-            <div class="group-item">
-                <label>Product Information</label>
-                <table border="1">
-                    <tr>
-                        <th>Product: </th>
-                        <td>
-                            <select class="item" id="product_id" onchange="selectUnitPrice()" required>
-                                <option value="">--Select--</option>
-                                <option value="650">Comfort Sleeper</option>
-                                <option value="975">Morgan Kids Bed</option>
-                                <option value="480">Entertainment Cabinet</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Unit Price($): </th>
-                        <td>
-                            <input class="item" type="number" id="UnitPrice_id" disabled="true" value="0" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Quantity: </th>
-                        <td>
-                            <input class="item" type="number" id="quantity_id" disabled="true" value="0" onkeyup="updateQuantity()" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Total Price($): </th>
-                        <td>
-                            <input class="item" type="number" id="totalPrive_id" disabled="true" value="0" required>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="group-item">
-                <label>Shipping Information</label>
-                <table border="1">
-                    <tr>
-                        <th>Full Name: </th>
-                        <td>
-                            <input style="width: 300px;" type="text" class="item" id="fullname_id" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Shipping Address: </th>
-                        <td>
-                            <textarea type="text" id="shippingAddress_id" class="item" required></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Credit Card: </th>
-                        <td>
-                            <select class="item" required="true" id="creditCard_id" onchange="selectCreditCard()">
-                                <option value="">--Select--</option>
-                                <option value="650">VISA</option>
-                                <option value="975">Master Card</option>
-                                <option value="480">American Express</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Credit Card Number: </th>
-                        <td>
-                            <input type="number"  id="ccn1_id" pattern="[0-9]{4}" maxlength="4" minlength="4" disabled="true" class="item" required>
-							<input type="number" id="ccn2_id" pattern="[0-9]{4}" maxlength="4" minlength="4" disabled="true" class="item" required>
-							<input type="number" id="ccn3_id" pattern="[0-9]{4}" maxlength="4" minlength="4" disabled="true" class="item" required>
-							<input type="number" id="ccn4_id" pattern="[0-9]{4}" maxlength="4" minlength="4" disabled="true" class="item" required>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="pannel-footer">
-            <button class="btn btn-submit" type="submit" onclick="submitData()">Submit</button>
-            <button class="btn btn-reset" type="reset" onclick="resetData()">Reset</button>
-        </div>
-    </div>
+    </form>
+    
 
     <script type="text/javascript" src="script.js"></script>
 </body>

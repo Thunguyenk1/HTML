@@ -13,15 +13,17 @@ var ccn2Tag = document.getElementById('ccn2_id')
 var ccn3Tag = document.getElementById('ccn3_id')
 var ccn4Tag = document.getElementById('ccn4_id')
 
+loadData()
+
 function selectUnitPrice() {
     let product = productTag.value
     if(product != ''){
 		unitPriceTag.value = product
-		document.getElementById('quantity_id').disabled = false
+		quantityTag.disabled = false
 	}
 	else{
 		unitPrice.value = '0'
-		document.getElementById('quantity_id').disabled = true
+		quantityTag.disabled = true
 	}
 }
 
@@ -35,19 +37,19 @@ function selectCreditCard(){
 	let creditcard = creditCardTag.value
 
 	if(creditcard != ''){
-		document.getElementById('ccn1_id').disabled = false
-		document.getElementById('ccn2_id').disabled = false
-		document.getElementById('ccn3_id').disabled = false
-		document.getElementById('ccn4_id').disabled = false
+		ccn1Tag.disabled = false
+		ccn2Tag.disabled = false
+		ccn3Tag.disabled = false
+		ccn4Tag.disabled = false
 	}else {
-		document.getElementById('ccn1_id').disabled = true
-		document.getElementById('ccn2_id').disabled = true
-		document.getElementById('ccn3_id').disabled = true
-		document.getElementById('ccn4_id').disabled = true
+		ccn1Tag.disabled = true
+		ccn2Tag.disabled = true
+		ccn3Tag.disabled = true
+		ccn4Tag.disabled = true
 	}
 }
 
-function submitData() {
+function saveData() {
 	// Product Information
 	let product = productTag.value
 	let unitPrice = unitPriceTag.value
@@ -63,25 +65,45 @@ function submitData() {
 	let ccn3 = ccn3Tag.value
 	let ccn4 = ccn4Tag.value
 
-	if(product == "" || quantity == "" || fullname == "" || shippingAddress == "" || creditCard == "" || ccn1 == "" || ccn2 == ""|| ccn3 == "" || ccn4 == "") {
-        alert("Noi dung khong dung dinh dang")
-        return
-    }
+	localStorage.setItem('product', product)
+	localStorage.setItem('uniPrice', unitPrice)
+	localStorage.setItem('quantity', quantity)
+	localStorage.setItem('totalPrive', totalPrive)
+	localStorage.setItem('fullname', fullname)
+	localStorage.setItem('shippingAddress', shippingAddress)
+	localStorage.setItem('creditCard', creditCard)
+	localStorage.setItem('ccn1', ccn1)
+	localStorage.setItem('ccn2', ccn2)
+	localStorage.setItem('ccn3', ccn3)
+	localStorage.setItem('ccn4', ccn4)
 
-	alert("Luu thanh cong")
+	return false
+}
+
+function loadData() {
+	productTag.value = localStorage.getItem('product')
+	unitPriceTag.value = localStorage.getItem('uniPrice')
+	quantityTag.value = localStorage.getItem('quantity')
+	totalPriveTag.value = localStorage.getItem('totalPrive')
+	fullnameTag.value = localStorage.getItem('fullname')
+	shippingAddressTag.value = localStorage.getItem('shippingAddress')
+	creditCardTag.value = localStorage.getItem('creditCard')
+	ccn1Tag.value = localStorage.getItem('ccn1')
+	ccn2Tag.value = localStorage.getItem('ccn2')
+	ccn3Tag.value = localStorage.getItem('ccn3')
+	ccn4Tag.value = localStorage.getItem('ccn4')
 }
 
 function resetData() {
-	productTag.value =  ""
-	unitPriceTag.value =  ""
-	quantityTag.value =  ""
-	unitPriceTag.value =  ""
-	totalPriveTag.value =  ""
-	fullnameTag.value =  ""
-	shippingAddressTag.value =  ""
-	creditCardTag.value =  ""
-	ccn1Tag.value =  ""
-	ccn2Tag.value =  ""
-	ccn3Tag.value =  ""
-	ccn4Tag.value =  ""
+	localStorage.removeItem('product')
+	localStorage.removeItem('uniPrice')
+	localStorage.removeItem('quantity')
+	localStorage.removeItem('totalPrive')
+	localStorage.removeItem('fullname')
+	localStorage.removeItem('shippingAddress')
+	localStorage.removeItem('creditCard')
+	localStorage.removeItem('ccn1')
+	localStorage.removeItem('ccn2')
+	localStorage.removeItem('ccn3')
+	localStorage.removeItem('ccn4')
 }
