@@ -1,0 +1,155 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.panel {
+    display: block;
+    margin: 0px auto;
+}
+
+.panel-heading {
+    width: 100%;
+    background-color: #857F6E;
+    display: flex;
+    padding: 10px;
+}
+
+.panel-heading .logo {
+    float: left;
+    cursor: pointer;
+}
+
+.panel-heading .search {
+    float: right;
+}
+
+.panel-heading .logo img {
+    width: 100px;
+}
+
+.panel-heading .menu ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.panel-heading .menu ul li {
+    background-color: #DBDAE6;
+    color: #01339B;
+    font-weight: bold;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.panel-heading .menu ul li:hover {
+    background-color: #01339B;
+    color: white;
+}
+
+.panel-heading .search {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #01339B;
+}
+
+.panel-heading .search input {
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 500px;
+    border: none;
+}
+
+.panel-heading .search input:focus {
+    background-color: antiquewhite;
+}
+
+.panel-heading .search button {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+}
+
+.panel-heading .search button:hover {
+    background-color: #01339B;
+    color: white;
+}
+
+.panel-body .baner img {
+    width: 100%;
+    height: 150px;
+}
+
+.group-form-control {
+    width: 100%;
+    display: flex;
+}
+
+.group-form-control .left {
+    width: 20%;
+}
+
+.group-form-control .right {
+    width: 80%;
+}
+
+.group-form-control .left .tieude {
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.group-form-control .left .tieude ul {
+    list-style-type: none;
+    border: solid 1px rgba(128, 128, 128, 0.222);
+    margin: 0px;
+    padding: 0px;
+}
+
+.group-form-control .left .tieude ul li {
+    padding: 10px;
+    font-weight: bold; 
+    cursor: pointer;
+    background-color: #b5b5b538;
+}
+
+.group-form-control .left .tieude ul li:hover {
+    background-color: #B5B5B5;
+}
+
+.right h4 {
+    color: #999FA8;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.row .col-6 {
+    width: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #9FC89E;
+    border-radius: 10px;
+}
+
+.row .col-6 img{
+    width: 100%;
+}
+
+.row .col-3 {
+    width: 25%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.row .col-3 img{
+    width: 100%;
+}
