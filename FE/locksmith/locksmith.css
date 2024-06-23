@@ -1,0 +1,72 @@
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+}
+.menu>li {
+    display: inline-block;
+    margin-right: 25px;
+    padding: 10px 0px;
+    list-style: none;
+    position: relative;
+}
+
+.menu>li>a {
+    text-decoration: none;
+    color: #052336;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.menu>li:hover {
+    border-bottom: 2px solid #ffc107;
+}
+
+.sub-menu {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 40px;
+    display: none;
+}
+
+.sub-menu>li {
+    list-style: none;
+    padding: 10px 20px;
+    width: 100px;
+}
+
+.sub-menu>li> a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sub-menu>li:hover> a {
+    color:#ffc107;
+}
+.menu>li:hover>.sub-menu {
+    display: block;
+}
+
+.banner {
+    height: 710px;
+    background-image: url(/img/banner.webp);
+    background-position: top, center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner>div {
+    width: 30%;
+    height: 30%;
+    background-color: rgba(17,17,17,0.4);
+}
